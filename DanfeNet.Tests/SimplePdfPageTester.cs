@@ -44,23 +44,21 @@ internal class SimplePdfPageTester : IDisposable
 
     public void Save()
     {
-        Save(new StackTrace().GetFrame(1).GetMethod().Name + ".pdf");
+        Save(new StackTrace().GetFrame(1)!.GetMethod()!.Name + ".pdf");
     }
 
     #region IDisposable Support
-    private bool disposedValue = false; // To detect redundant calls
+    
+    private bool _disposedValue; // To detect redundant calls
 
     protected virtual void Dispose(bool disposing)
     {
-        if (!disposedValue)
+        if (!_disposedValue)
         {
             if (disposing)
-            {
-                if (File != null) 
-                    File.Dispose();
-            }
+                File.Dispose();
 
-            disposedValue = true;
+            _disposedValue = true;
         }
     }
 

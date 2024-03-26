@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using DanfeNet.Structs;
 
 namespace DanfeNet.Esquemas;
 

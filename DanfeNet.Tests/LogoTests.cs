@@ -12,7 +12,7 @@ public class LogoTests
         if (!Directory.Exists(OutputDirectoryName)) Directory.CreateDirectory(OutputDirectoryName);
     }
 
-    public void TestLogo(string logoPath, [CallerMemberName] string pdfName = null)
+    public void TestLogo(string logoPath, [CallerMemberName] string? pdfName = null)
     {
         var model = FabricaFake.DanfeViewModel_1();
         model.Orientacao = Orientacao.Retrato;

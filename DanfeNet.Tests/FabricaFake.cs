@@ -4,7 +4,7 @@ namespace DanfeNet.Tests;
 
 public static class FabricaFake
 {
-    public const double v = 1234.56;
+    public const double Value = 1234.56;
 
     public static LocalEntregaRetiradaInfo LocalEntregaRetiradaFake()
     {
@@ -26,24 +26,24 @@ public static class FabricaFake
     {
         return new CalculoImposto
         {
-            BaseCalculoIcms = v,
-            BaseCalculoIcmsSt = v,
-            Desconto = v,
-            OutrasDespesas = v,
-            ValorAproximadoTributos = v,
-            ValorCofins = v,
-            ValorFrete = v,
-            ValorIcms = v,
-            ValorIcmsSt = v,
-            ValorII = v,
-            ValorIpi = v,
-            ValorPis = v,
-            ValorSeguro = v,
-            ValorTotalNota = v,
-            ValorTotalProdutos = v,
-            vFCPUFDest = v,
-            vICMSUFDest = v,
-            vICMSUFRemet = v
+            BaseCalculoIcms = Value,
+            BaseCalculoIcmsSt = Value,
+            Desconto = Value,
+            OutrasDespesas = Value,
+            ValorAproximadoTributos = Value,
+            ValorCofins = Value,
+            ValorFrete = Value,
+            ValorIcms = Value,
+            ValorIcmsSt = Value,
+            ValorII = Value,
+            ValorIpi = Value,
+            ValorPis = Value,
+            ValorSeguro = Value,
+            ValorTotalNota = Value,
+            ValorTotalProdutos = Value,
+            vFCPUFDest = Value,
+            vICMSUFDest = Value,
+            vICMSUFRemet = Value
         };
     }
 
@@ -51,11 +51,11 @@ public static class FabricaFake
     {
         return new CalculoIssqn
         {
-            BaseIssqn = v,
+            BaseIssqn = Value,
             InscricaoMunicipal = "123456789",
             Mostrar = true,
-            ValorIssqn = v,
-            ValorTotalServicos = v
+            ValorIssqn = Value,
+            ValorTotalServicos = Value
         };
     }
 

@@ -3,7 +3,7 @@ using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
 
-namespace DanfeNet.Structs;
+namespace DanfeNet.Esquemas;
 
 // Source: https://stackoverflow.com/questions/3377036/how-can-i-xml-serialize-a-datetimeoffset-property
 /// <remarks>
@@ -17,7 +17,7 @@ public struct DateTimeOffsetIso8601 : IXmlSerializable
 
     public DateTimeOffsetIso8601(DateTimeOffset value)
     {
-        this.DateTimeOffsetValue = value;
+        DateTimeOffsetValue = value;
     }
 
     public static implicit operator DateTimeOffsetIso8601(DateTimeOffset value)
