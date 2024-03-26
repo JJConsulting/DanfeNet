@@ -31,7 +31,7 @@ var danfe = new Danfe()
 using (var pdf = new DanfePdf(danfe))
 {
 	pdf.Generate();
-	pdf.SalveAs(@"C:\danfe.pdf");
+	pdf.SaveAs(@"C:\danfe.pdf");
 }
 ```
 
